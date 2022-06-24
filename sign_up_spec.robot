@@ -46,4 +46,11 @@ Test Sign Up Successful
 
   Close Browser
 
-
+Test Navigate to Log In Page from Sign Up Page
+  Set Selenium Implicit Wait      ${WAIT_TIME_IN_SECONDS}
+  Open Browser                    ${SIGN_UP_URL}  ${BROWSER}
+  Wait Until Element Is Visible   id:login-page-link
+  Click Element                   id:login-page-link
+  Wait Until Element Is Visible   id:login-header
+  Page Should Contain Element     id:login-header
+  Close Browser
