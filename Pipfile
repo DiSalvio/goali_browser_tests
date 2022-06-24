@@ -8,6 +8,9 @@ selenium = "*"
 webdriver-manager = "*"
 pytest = "*"
 faker = "*"
+robotframework = "*"
+robotframework-seleniumlibrary = "*"
+robotframework-faker = "*"
 
 [dev-packages]
 
